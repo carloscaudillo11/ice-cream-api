@@ -1,0 +1,3 @@
+FROM openjdk:21-jdk
+COPY target/ice_cream.jar app.jar
+ENTRYPOINT [ "java", "-jar", "app.jar" ]
