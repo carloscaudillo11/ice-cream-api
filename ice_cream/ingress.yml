@@ -1,0 +1,16 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: icecream-app
+spec:
+  rules:
+  - host: api.jcaudillo.com
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: icecream-app
+            port:
+              number: 80

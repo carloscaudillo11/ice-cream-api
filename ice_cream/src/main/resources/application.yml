@@ -2,5 +2,5 @@ spring:
     data:
         mongodb:
             database: ice_cream
-            host: ice-cream-db
+            host: mongodb
             port: 27017

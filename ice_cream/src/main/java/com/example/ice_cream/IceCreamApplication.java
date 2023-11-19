@@ -9,5 +9,4 @@ public class IceCreamApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(IceCreamApplication.class, args);
 	}
-
 }
