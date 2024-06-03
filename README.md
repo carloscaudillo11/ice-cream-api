@@ -90,25 +90,6 @@ Este proyecto incluye un `Dockerfile` y un `docker-compose.yml` para facilitar l
 ### Dockerfile
 
 El `Dockerfile` construye la imagen de Docker para la aplicación Spring Boot.
-
-### Docker Compose
-
-El archivo `docker-compose.yml` configura los servicios de la aplicación y MongoDB.
-
-```yaml
-version: '3.8'
-services:
-  app:
-    image: nombre-de-tu-imagen
-    ports:
-      - "8080:8080"
-    depends_on:
-      - mongodb
-  mongodb:
-    image: mongo:latest
-    ports:
-      - "27017:27017"
-    volumes:
       - mongo-data:/data/db
 
 volumes:
